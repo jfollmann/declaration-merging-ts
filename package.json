@@ -1,0 +1,32 @@
+{
+  "name": "declaration-merging-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run:01": "nodemon --exec ts-node ./src/sample01.ts",
+    "run:02": "nodemon --exec ts-node ./src/sample02.ts",
+    "run:03": "nodemon --exec ts-node ./src/sample03.ts",
+    "start": "nodemon",
+    "compile": "tsc -p .",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "tsc": "^2.0.3",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.1.0"
+  }
+}
