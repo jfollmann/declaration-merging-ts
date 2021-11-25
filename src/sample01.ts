@@ -36,7 +36,7 @@ const run = async () => {
 
     await callUserData(api);
     await callUserFollowers(api);
-  } catch (error) {
+  } catch (error: any) {
     console.error(error.message);
   }
 };
